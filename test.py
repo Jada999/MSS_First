@@ -20,14 +20,14 @@ import pandas as pd
 
 # TODO: initialize sheets(Sheet name is “[your name] + "_answer"” for example "Bob_answer")
 wb = xw.Book()
-sheet = wb.sheets['Jada_answer']
+sheet = wb.sheets['Sheet1']
 
 # TODO: finish Your Code
 
 df = pd.DataFrame([['Liam','Noah','William','James','Logan','Benjamin','Mason','Elijah','Oliver','Jacob'],[1,2,3,4,5,6,7,8,9,10]],
                  index = ['name','student number'])
 
-sheet.range('Jada_answer').value= df
-sheet.range('Jada_answer').options(pd.DataFrame, expand='table').value
+sheet.range('A1').value= df
+sheet.range('A1').options(pd.DataFrame, expand='table').value
 
 #Today I am writing code with Serena and Jada
